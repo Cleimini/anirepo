@@ -1,0 +1,132 @@
+body {
+    background-color: var(--bs-gray-200);
+}
+
+main {
+    width: 80%;
+
+    section:first-child {
+        background-color: var(--bs-dark);
+
+        p {
+            font: {
+                size: 0.785em;
+                weight: 300;
+            }
+        }
+    }
+
+    .form-group select {
+        width: initial;
+    }
+
+    .Grid-Container {
+        display: grid;
+        grid-gap: 15px;
+    }
+
+    .Grid-2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .Grid-4 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .Grid-5 {
+        grid-template-columns: repeat(5, 1fr);
+
+        a {
+            width: 100%;
+
+            img {
+                border-bottom-left-radius: 0;
+                border-bottom-right-radius: 0;
+                width: 100%;
+            }
+
+            p {
+                font-size: 0.685em;
+            }
+        }
+    }
+
+    .Custom-Button-Border {
+        border: 1px solid;
+        border-bottom: 10px solid;
+    }
+
+    .Custom-Button-Border:active {
+        border-bottom: none;
+        border-top: 5px solid;
+    }
+
+    .Custom-Button-Border-Blue, .Custom-Button-Border-Blue:active {
+        border-color: #0951ba;
+    }
+
+    .Custom-Button-Border-Green, .Custom-Button-Border-Green:active {
+        border-color: #105233;
+    }
+
+    .Chart-Genres-Data-Container {
+        display: none;
+    }
+
+    .Centered-Box {
+        width: 50%;
+    }
+
+    #Source_Chart {
+        height: 350px;
+    }
+
+    #Studios_Chart, #Premiered_Chart, #Genres_Chart {
+        height: 325px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    main {
+        top: 57px;
+        width: 100%;
+
+        .form-group select, .Centered-Box, .Adjustable-Button-Width {
+            width: 100%;
+        }
+
+        .Grid-2, .Grid-4, .Grid-5 {
+            grid-template-columns: 1fr;
+        }
+
+        .Grid-5 a {
+            width: 250px;
+        }
+
+        .Chart-Genres-Container {
+            display: none;
+        }
+
+        .Chart-Genres-Data-Container {
+            display: block;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
+    main {
+        width: 75%;
+
+        .Grid-4 {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .Grid-5 {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .Centered-Box {
+            width: 75%;
+        }
+    }
+}

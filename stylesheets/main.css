@@ -1,0 +1,130 @@
+body {
+  background-color: var(--bs-gray-200);
+}
+
+main {
+  width: 80%;
+}
+
+main section:first-child {
+  background-color: var(--bs-dark);
+}
+
+main section:first-child p {
+  font-size: 0.785em;
+  font-weight: 300;
+}
+
+main .form-group select {
+  width: initial;
+}
+
+main .Grid-Container {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+}
+
+main .Grid-2 {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+main .Grid-4 {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+main .Grid-5 {
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+}
+
+main .Grid-5 a {
+  width: 100%;
+}
+
+main .Grid-5 a img {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  width: 100%;
+}
+
+main .Grid-5 a p {
+  font-size: 0.685em;
+}
+
+main .Custom-Button-Border {
+  border: 1px solid;
+  border-bottom: 10px solid;
+}
+
+main .Custom-Button-Border:active {
+  border-bottom: none;
+  border-top: 5px solid;
+}
+
+main .Custom-Button-Border-Blue, main .Custom-Button-Border-Blue:active {
+  border-color: #0951ba;
+}
+
+main .Custom-Button-Border-Green, main .Custom-Button-Border-Green:active {
+  border-color: #105233;
+}
+
+main .Chart-Genres-Data-Container {
+  display: none;
+}
+
+main .Centered-Box {
+  width: 50%;
+}
+
+main #Source_Chart {
+  height: 350px;
+}
+
+main #Studios_Chart, main #Premiered_Chart, main #Genres_Chart {
+  height: 325px;
+}
+
+@media only screen and (max-width: 767.98px) {
+  main {
+    top: 57px;
+    width: 100%;
+  }
+  main .form-group select, main .Centered-Box, main .Adjustable-Button-Width {
+    width: 100%;
+  }
+  main .Grid-2, main .Grid-4, main .Grid-5 {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  main .Grid-5 a {
+    width: 250px;
+  }
+  main .Chart-Genres-Container {
+    display: none;
+  }
+  main .Chart-Genres-Data-Container {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023.98px) {
+  main {
+    width: 75%;
+  }
+  main .Grid-4 {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  main .Grid-5 {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  main .Centered-Box {
+    width: 75%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

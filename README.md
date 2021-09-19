@@ -1,0 +1,2 @@
+# anirepo
+Digital Anime Repository.
